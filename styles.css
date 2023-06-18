@@ -27,7 +27,7 @@ body, html {
     justify-content: center;
     align-items: center;
     background-color: rgba(0, 0, 0, 0.4);
-    margin-top: 300px;
+    margin-top: 93px;
     width: 100%;
 }
 
@@ -42,15 +42,29 @@ body, html {
     align-items: flex-start;
     background-color: rgb(232, 239, 232);
     flex: 2;
+    width: 100%;
 }
 
-.main-text, .top, .bottom {
-    padding: 50px;
+.main-text, .top {
+    padding: 48px;
+}
+
+.bottom {
+    padding: 50px 50px 0px 50px;
+}
+
+.info {
+    padding: 0px 50px 50px 50px;
 }
 
 .main-text > p, .top > p {
     font-size: 1.5rem;
     font-weight: bold;
+}
+
+.top > p {
+    margin-top: 0px;
+    margin-bottom: 24px;
 }
 
 .top {
@@ -61,13 +75,37 @@ body, html {
 .input-boxes {
     display: flex;
     flex-wrap: wrap;
-    gap: 16px;
+    gap: 24px;
+    width: min(100%, 600px);
 }
 
 .input-box {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+}
+
+.input-box label {
+    font-size: 0.7rem;
+}
+
+.input-box input::placeholder {
+    color:rgb(189, 189, 189);
+}
+
+.input-box input {
+    padding: 6px;
+    width: 250px;
+    font-size: 1rem;
+    border: 0;
+    outline: 0;
+    border-bottom: 1px solid black;
+}
+
+div.input-box p.error {
+    font-size: 0.7rem; 
+    color: red;
+    margin: 0px;
 }
 
 .bottom > button {
@@ -77,8 +115,17 @@ body, html {
     padding: 16px 32px;
     font-size: 1.1rem;
     font-weight: bold;
+    border: 0;
 }
 
-.bottom > p {
+.bottom > button:hover {
+    background-color: rgb(65, 113, 65);
+}
+
+.bottom > button:active {
+    background-color: rgb(31, 73, 31);
+}
+
+.bottom + p {
     font-size: 1rem;
 }

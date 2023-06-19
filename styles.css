@@ -129,3 +129,29 @@ div.input-box p.error {
 .bottom + p {
     font-size: 1rem;
 }
+
+/* VERY basic responsiveness for mobile devices */
+@media (max-width: 540px) {
+   body {
+        position: absolute;
+        overflow-x: hidden;
+    }
+
+    .container {
+        display: block;
+    }
+
+    .text-container {
+        display: block;
+        position: absolute;
+    }
+
+    .image-container {
+        min-width: 540px;
+    }
+
+    .banner {
+        position: relative;
+        bottom: 45px;
+    }
+}

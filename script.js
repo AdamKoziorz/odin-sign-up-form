@@ -16,7 +16,7 @@ function invalidate(input) {
     } else if (input.id === "email") {
         input.nextElementSibling.textContent = "Email is not in a valid format (aaa@aaa.aaa)";
     } else if (input.id === "phone") {
-        input.nextElementSibling.textContent = "Phone # is not in a valid format (xxx-xxx-xxxx)";
+        input.nextElementSibling.textContent = "Phone # is not in a valid format (10 digits only)";
     } else if ((input.id === "password") || (input.id === "confirm-password")) {
         input.nextElementSibling.textContent = "Passwords do not match";
     }
